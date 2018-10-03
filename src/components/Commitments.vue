@@ -1,19 +1,21 @@
-<template>
+<template lang="html">
   <v-container fluid>
     <v-scale-transition mode="out-in">
       <v-layout align-center justify-center row fill-height>
-        PARTY TIME
+        <stacked-bar></stacked-bar>
       </v-layout>
     </v-scale-transition>
   </v-container>
 </template>
 
 <script>
+import StackedBar from '@/components/StackedBar'
 export default {
-
+  components: {
+    'stacked-bar': StackedBar
+  }
 }
 </script>
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
 
+<style lang="css">
 </style>
